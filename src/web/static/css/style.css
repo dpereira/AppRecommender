@@ -151,7 +151,7 @@ float: right;
 }
 
 .innertube {
-margin: 15px;
+margin: 30px;
 }
 
 #footer {
@@ -226,9 +226,11 @@ color: #444;
 h5 {
 font-style: italic;
 font-size: 0.75em;
+color: #444;
 }
 pre {
 margin: 1.5em 0 1.5em 0;
+font-size: 1.3em;
 overflow: auto;
 font-family: monospace;
 white-space: pre;
@@ -292,7 +294,8 @@ background-image: url('../images/admon-note.png');
 
 /* Recommender BOX */
 
-#recommender-box { 
+#recommender-box {
+height: 43px; 
 position: relative;
 margin:0;
 vertical-align: top;
@@ -323,8 +326,9 @@ z-index: 1;
 }
 
 #pkgs_list, #input-box {
+padding:10px;
 position: relative;
-width: 400px;
+width: auto;
 }
 
 #pkgs_list {
