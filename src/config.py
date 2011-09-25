@@ -82,7 +82,7 @@ class Config(Singleton):
             self.k_neighbors = 50
             # popcon profiling method: full, voted
             self.popcon_profiling = "full"
-
+            self.survey_mode = True
             self.load_options()
             self.set_logger()
             self.initialized = 1

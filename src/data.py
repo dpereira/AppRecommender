@@ -373,7 +373,7 @@ class FilteredPopconXapianIndex(xapian.WritableDatabase):
                 submission = PopconSubmission(os.path.join(root, popcon_file))
                 doc = xapian.Document()
                 submission_pkgs = submission.get_filtered(self.valid_pkgs)
-                if len(submission_pkgs) < 10:
+                if False and len(submission_pkgs) < 10:
                     logging.debug("Low profile popcon submission \'%s\' (%d)" %
                                   (submission.user_id,len(submission_pkgs)))
                 else:

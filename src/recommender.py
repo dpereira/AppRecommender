@@ -76,10 +76,13 @@ class Recommender:
         self.cfg = cfg
         # Load xapian indexes
         #self.axi_programs = xapian.Database(cfg.axi_programs)
-        self.axi_desktopapps = xapian.Database(cfg.axi_desktopapps)
+
+	print cfg.axi_desktopapps       
+	self.axi_desktopapps = xapian.Database(cfg.axi_desktopapps)
         if cfg.popcon:
             #self.popcon_programs = xapian.Database(cfg.popcon_programs)
             self.popcon_desktopapps = xapian.Database(cfg.popcon_desktopapps)
+	    print cfg.popcon_desktopapps       
         # Load valid programs, desktopapps and tags
         # format: one package or tag name per line
         #self.valid_programs = []
